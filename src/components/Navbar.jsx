@@ -1,32 +1,35 @@
 import React from "react";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav className="shadow-md fixed top-0 left-0 w-full z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white" >
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            <img
-              src="/logo.svg" // Replace with your logo
-              alt="Logo"
-              className="h-8 w-auto"
-            />
-            <span className="ml-2 font-bold text-lg">Atacama</span>
-          </div>
 
           {/* Links */}
           <div className="hidden md:flex space-x-8">
             <a href="#" className="text-gray-600 hover:text-gray-800">
               Home
             </a>
-            <a href="#" className="text-gray-600 hover:text-gray-800">
+            <a href="#" className="text-gray-600 hover:text-gray-800 bg-slate-100 rounded-full py-2 font-sans px-2 mx-0">
               Contribution
             </a>
             <a href="#" className="text-gray-600 hover:text-gray-800">
               Our Mission
             </a>
           </div>
+            
+          {/* Logo */}
+          <div className="flex items-center bg-slate-100 rounded-full py-0 font-sans px-2 mx-0">
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-10 w-auto"
+            />
+            <span className="ml-2 font-bold text-lg">Atacama</span>
+          </div>
+
 
           {/* Dropdowns */}
           <div className="hidden md:flex space-x-4">
