@@ -9,6 +9,7 @@ function Footer() {
       <footer class="w-full">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between flex-col py-14 gap-14 lg:gap-20 min-[1124px]:flex-row">
+
             {/* subscribe btn */}
             <div class="flex w-1/2  xl:max-w-lg">
               <div class="relative lg:flex-row gap-3 flex-col flex items-center justify-between max-[1124px]:max-w-2xl max-[1124px]:mx-auto ">
@@ -16,7 +17,7 @@ function Footer() {
                   type="text"
                   name="email"
                   class="py-3 px-5 h-14 pl-14 border border-gray-300 rounded-full text-lg text-gray-900 placeholder:text-gray-400 focus:outline-none flex-1 w-full "
-                  placeholder="Contact"
+                  placeholder="Email address"
                 />
                 <button
                   type="submit"
