@@ -3,7 +3,7 @@ import logo from "../assets/logo.png";
 
 function Footer() {
   const btncls =
-    "text-gray-600 hover:text-gray-800 rounded-full py-1.5 font-sans px-2 mx-0 shadow-sm shadow-slate-200 border border-gray-300 bg-white";
+    "text-gray-600 hover:text-gray-800 rounded-full py-2 font-sans px-3 mx-0 shadow-sm shadow-slate-200 border border-gray-300 bg-white";
   return (
     <div className="py-0 border-t border-gray-200">
      
