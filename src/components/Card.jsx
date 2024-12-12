@@ -7,7 +7,6 @@ const Card = ({ image, title, description, isExpanded, onClick }) => {
         isExpanded ? "w-80" : "w-60"
       } h-96`}
       style={{ backgroundImage: `url(${image})` }}
-      onClick={onClick}
     >
       {/* Gradient Overlay */}
       <div className=" rounded-2xl absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
@@ -24,8 +23,11 @@ const Card = ({ image, title, description, isExpanded, onClick }) => {
           className={`mt-4 py-2 justify-start bg-white text-black rounded-full shadow-md hover:bg-gray-100 transition-all duration-300 ease-in-out flex items-center relative ${
             isExpanded ? "w-3/4 px-6" : "px-4 w-40"
           }`}
+          onClick={onClick}
         >
-          <span className="text-sm font-medium">Explore Problem</span>
+          <span className="text-sm font-medium">
+            Explore Problem
+          </span>
           <span
             className="absolute right-4 transform transition-transform duration-300 ${
            "
