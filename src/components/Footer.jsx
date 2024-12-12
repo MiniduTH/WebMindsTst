@@ -5,7 +5,7 @@ function Footer() {
   const btncls =
     "text-gray-600 hover:text-gray-800 rounded-full py-1.5 font-sans px-2 mx-0 shadow-sm shadow-slate-200 border border-gray-300 bg-white";
   return (
-    <div className="py-2 border-t border-gray-200">
+    <div className="py-0 border-t border-gray-200">
      
       <footer class="w-full bg-slate-50">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
