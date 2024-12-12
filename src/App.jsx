@@ -8,8 +8,13 @@ function App() {
     <>
       <Navbar />
       <div className='my-10'></div>
+<div>
 
-      
+      sample txt <br />
+      sample txt <br />
+      sample txt <br />
+     
+</div>
       <Footer />
     </>
   ) 
