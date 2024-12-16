@@ -2,8 +2,9 @@ import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import RenderedCards from "./components/RenderedCards.jsx";
-import ImageLineCard from "./components/ImageLineCard.jsx";
 import RenderedImageLine from "./components/RenderedImageLine.jsx";
+import Hero from "./components/Hero.jsx";
+import Table from "./components/Table.jsx";
 
 function App() {
   return (
@@ -11,11 +12,11 @@ function App() {
       <Navbar />
       <div className="my-10"></div>
       <div>
-        sample txt <br />
-        sample txt <br />
-        sample txt <br />
+        <br />
       </div>
+      <Hero/>
       <RenderedImageLine/>
+      <Table/>
       <RenderedCards />
       <Footer />
     </>
