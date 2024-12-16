@@ -1,5 +1,5 @@
 import React from "react";
-import RoundImg from "./ROundImg";
+import RoundImg from "./RoundImg";
 import dessert from "../assets/dessert.jpg";
 import glacier2 from "../assets/glacier2.jpg";
 import forest from "../assets/forest.jpg";
