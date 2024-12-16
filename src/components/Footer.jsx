@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="py-0 border-t border-gray-200">
      
-      <footer class="w-full bg-slate-50">
+      <footer class="w-full bg-slate-100">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between flex-col py-14 gap-14 lg:gap-20 min-[1124px]:flex-row">
             {/* left */}

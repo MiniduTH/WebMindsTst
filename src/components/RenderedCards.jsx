@@ -29,7 +29,7 @@ const RenderedCards = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-10">
+    <div className="min-h-screen bg-gray-50 flex items-center justify-center p-10">
       <div className="flex space-x-4">
         {cards.map((card, index) => (
           <Card
