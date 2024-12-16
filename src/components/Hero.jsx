@@ -4,8 +4,13 @@ import dessert from "../assets/dessert.jpg";
 import glacier2 from "../assets/glacier2.jpg";
 import forest from "../assets/forest.jpg";
 import ocean from "../assets/ocean.avif";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Hero = () => {
+  const btncls =
+  "text-gray-600 hover:text-gray-800 bg-white rounded-full py-3 font-sans px-4 mx-0 shadow-sm shadow-slate-200";
+
   return (
     <section className="relative flex items-center justify-center h-screen bg-gray-50 text-center">
       {/* Floating Decorative Circles */}
@@ -17,7 +22,7 @@ const Hero = () => {
 
       {/* Main Content */}
       <div className="px-4 items-center flex flex-col">
-        <h1 className="text-4xl md:text-6xl font-bold text-gray-800 leading-tight  w-full">
+        <h1 className="text-4xl md:text-6xl font-medium text-gray-800 leading-tight  w-full">
           Let’s Make Our World
           <br />
           Cleaner & Greener!
@@ -29,11 +34,17 @@ const Hero = () => {
 
         {/* Buttons */}
         <div className="mt-6 flex justify-center gap-4">
-          <button className="px-6 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-700">
-            View Projects →
+          <button className={btncls +" border border-gray-600"}>
+            View Projects    
+            <span className="pl-2">
+            <FontAwesomeIcon icon={faArrowRight} />
+            </span>
           </button>
-          <button className="px-6 py-3 bg-gray-200 text-gray-800 rounded-full hover:bg-gray-300">
-            Learn More →
+          <button className={btncls}>
+            Learn More 
+            <span className="pl-2">
+            <FontAwesomeIcon icon={faArrowRight} />
+              </span>   
           </button>
         </div>
       </div>
