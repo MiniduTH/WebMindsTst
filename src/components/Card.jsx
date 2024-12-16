@@ -1,3 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+
 import React from "react";
 
 const Card = ({ image, title, description, isExpanded, onClick }) => {
@@ -32,7 +36,7 @@ const Card = ({ image, title, description, isExpanded, onClick }) => {
             className="absolute right-4 transform transition-transform duration-300 ${
            "
           >
-            ➤
+            <FontAwesomeIcon icon={faChevronRight} />
           </span>
         </button>
       </div>
@@ -45,8 +49,8 @@ const Card = ({ image, title, description, isExpanded, onClick }) => {
             : "bg-white text-black"
         }`}
       >
-        <span className="transform transition-transform duration-300">
-          &#8599; {/* North East Arrow */}
+        <span className="transform transition-transform duration-300 -rotate-45">
+        <FontAwesomeIcon icon={faArrowRight} />
         </span>
       </button>
     </div>
